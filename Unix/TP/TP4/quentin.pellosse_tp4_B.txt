@@ -1,0 +1,57 @@
+Exercice 1 : 
+
+1/ Pwd
+
+2/ cd /usr/share/doc && pwd
+
+3/ cd ..  && pwd
+
+4/ cd ~
+
+5/ cd -
+
+6/ cd ~ && ls
+
+7/ ls -a
+
+8/ ls -R /usr
+
+9/ tree /var
+
+10/ ls -R -t /var/log
+
+Exercice 2 : 
+
+1/ mkdir -p system/tp1
+
+2/ rmdir system/tp1, mkdir -p system/tp1/ system/tp2
+
+3/ mv system test
+
+4.1/ /bin cp ssh ~/Developments/Cours/Unix/TP/TP4/test/tp1 
+
+4.2/ cp /bin/ssh test/tp1
+
+4.3/ cp /bin/ssh Developments/Cours/Unix/TP/TP4 
+
+4.4/ cd /home puis cd ../bin/ssh
+
+5/ rm -r test/tp1 test/tp2
+
+Exercice 3 : 
+
+mkdir -p home/user1 home/user1/module2 home/user1/module3 home/user2 home/user1/module1/cours home/user1/module1/tp
+
+touch home/user1/module1/TP/tp1.txt
+touch home/user1/module1/TP/tp2.txt
+touch home/user1/module1/TP/tp3.txt
+touch home/user1/module1/TP/tp4.txt
+
+2/ sudo passwd user1 && sudo passwd user2
+
+3/ mkdir user2/configuration && cp /etc/*.conf user2/configuration
+
+
+
+
+

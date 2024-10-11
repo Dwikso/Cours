@@ -1,0 +1,60 @@
+// Exercice 1
+
+1/ Command : ls
+
+2/ Command ls -a
+
+3/ Command ls -l
+
+4/ Command : ls -R
+
+5/ Command : ls -t et ls -tr
+
+6/ Command : ls -F
+
+7/ Command : ls -i
+
+8/ Command ls -lu
+
+9/ Command : ls -lai
+
+10/ Command : ls ~
+
+11/ Command : ls > liste.txt
+
+
+// Exercice 2
+
+2/ Command :  tar -cvf archive.tar *
+
+4/ Command : tar -tf archive.tar
+
+5/ Command ls -s archive.tar Taille 12 ou ls -lh 
+
+6/ gzip archive.tar.gz 
+
+7/ Taille 4
+
+8/ Command gunzip
+
+9/ zip archive.zip nom_du_dossier
+
+10/ Taille 4
+
+11/ une archive tar est plus lourde qu'une zip
+
+// Exercice 3
+
+1/ Command :  mkdir test && mkdir test/pub && mkdir test/bin
+
+2/ Command : ls -ld test test/pub test/bin
+
+3/ Command : chmod 755 test test/pub, Command : chmod 661 test/bin
+
+4/ Command touch doc.txt && cp doc.txt pub
+
+5/ Command : cat ../../test/pub/doc.txt
+
+6/ ls -R test
+
+7/ Command : rm -ri 

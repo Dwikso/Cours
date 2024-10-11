@@ -1,0 +1,284 @@
+Exercice 1
+
+├── cours
+│   ├── seance1
+│   │   ├── notes1.txt
+│   │   └── notes2.txt
+│   └── seance2
+│       └── notes3.txt
+├── linux
+│   ├── tp1.txt
+│   └── tp2.txt
+├── LisezMoi.txt
+├── Sans nom 1.odt
+└── TD
+
+2/ cd cours/seance1 et cd ../../linux
+
+3/ cd cours/seance1
+
+4/ On ne peut pas supprimer le dossier tp2 car il contient un fichier tp2.txt
+pour forcer la suppression il faut utiliser la commande rm -rf cours/seance2
+
+5 et 6/ mv linux/* TD
+
+cd TD
+mv tp1.txt td1.txt
+mv tp2.txt td2.txt
+
+5 commandes pour l'éxo 5
+4 commandes pour l'éxo 6
+
+
+7/ mv linux/tp1 ./TD/td1 && mv linux/tp2 TD/td2  
+
+8/ cp cours/seance1/notes1.txt cours/seance2/notes3.txt
+mv dépalce le fichier alors que cp copie le fichier
+
+9/
+
+├── cours
+│   ├── seance1
+│   │   ├── notes1.txt
+│   │   └── notes2.txt
+│   └── seance2
+│       └── notes3.txt
+├── linux
+├── LisezMoi.txt
+├── Sans nom 1.odt
+├── TD
+│   ├── td1
+│   ├── td1.txt
+│   ├── td2
+│   └── td2.txt
+└── tp2.txt
+
+
+
+Exercice 2
+
+1/ cat /etc/passwd
+root:x:0:0:Super User:/root:/bin/bash
+bin:x:1:1:bin:/bin:/usr/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/usr/sbin/nologin
+adm:x:3:4:adm:/var/adm:/usr/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/usr/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/usr/sbin/nologin
+operator:x:11:0:operator:/root:/usr/sbin/nologin
+games:x:12:100:games:/usr/games:/usr/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/usr/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/usr/sbin/nologin
+dbus:x:81:81:System Message Bus:/:/usr/sbin/nologin
+apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin
+tss:x:59:59:Account used for TPM access:/:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/usr/sbin/nologin
+systemd-oom:x:998:998:systemd Userspace OOM Killer:/:/usr/sbin/nologin
+systemd-resolve:x:193:193:systemd Resolver:/:/usr/sbin/nologin
+systemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin
+qemu:x:107:107:qemu user:/:/sbin/nologin
+polkitd:x:114:114:User for polkitd:/:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+unbound:x:996:996:Unbound DNS resolver:/var/lib/unbound:/sbin/nologin
+geoclue:x:995:994:User for geoclue:/var/lib/geoclue:/sbin/nologin
+nm-openconnect:x:994:992:NetworkManager user for OpenConnect:/:/sbin/nologin
+gluster:x:993:990:GlusterFS daemons:/run/gluster:/sbin/nologin
+saslauth:x:992:76:Saslauthd user:/run/saslauthd:/sbin/nologin
+rtkit:x:172:172:RealtimeKit:/:/sbin/nologin
+pipewire:x:991:989:PipeWire System Daemon:/run/pipewire:/usr/sbin/nologin
+chrony:x:990:988:chrony system user:/var/lib/chrony:/sbin/nologin
+dnsmasq:x:989:987:Dnsmasq DHCP and DNS server:/var/lib/dnsmasq:/usr/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+openvpn:x:988:986:OpenVPN:/etc/openvpn:/sbin/nologin
+nm-openvpn:x:987:985:Default user for running openvpn spawned by NetworkManager:/:/sbin/nologin
+colord:x:986:984:User for colord:/var/lib/colord:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+wsdd:x:985:982:Web Services Dynamic Discovery host daemon:/:/sbin/nologin
+flatpak:x:984:981:Flatpak system helper:/:/usr/sbin/nologin
+gdm:x:42:42:GNOME Display Manager:/var/lib/gdm:/usr/sbin/nologin
+gnome-initial-setup:x:983:980::/run/gnome-initial-setup/:/sbin/nologin
+vboxadd:x:982:1::/var/run/vboxadd:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/usr/share/empty.sshd:/usr/sbin/nologin
+tcpdump:x:72:72:tcpdump:/:/usr/sbin/nologin
+passim:x:975:975:Local Caching Server:/usr/share/empty:/usr/sbin/nologin
+dwikso:x:1000:1000:Dwikso:/home/dwikso:/usr/bin/zsh
+gnome-remote-desktop:x:974:974:GNOME Remote Desktop:/var/lib/gnome-remote-desktop:/usr/sbin/nologin
+sddm:x:973:973:SDDM Greeter Account:/var/lib/sddm:/usr/sbin/nologin
+
+
+2/ il ne se pass rien car on précise pas de fichier répertoire, la command cat boucle 
+
+3/ root:x:0:0:Super User:/root:/bin/bash
+bin:x:1:1:bin:/bin:/usr/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/usr/sbin/nologin
+adm:x:3:4:adm:/var/adm:/usr/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/usr/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/usr/sbin/nologin
+operator:x:11:0:operator:/root:/usr/sbin/nologin
+games:x:12:100:games:/usr/games:/usr/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/usr/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/usr/sbin/nologin
+dbus:x:81:81:System Message Bus:/:/usr/sbin/nologin
+apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin
+tss:x:59:59:Account used for TPM access:/:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/usr/sbin/nologin
+systemd-oom:x:998:998:systemd Userspace OOM Killer:/:/usr/sbin/nologin
+systemd-resolve:x:193:193:systemd Resolver:/:/usr/sbin/nologin
+systemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin
+qemu:x:107:107:qemu user:/:/sbin/nologin
+polkitd:x:114:114:User for polkitd:/:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+unbound:x:996:996:Unbound DNS resolver:/var/lib/unbound:/sbin/nologin
+geoclue:x:995:994:User for geoclue:/var/lib/geoclue:/sbin/nologin
+nm-openconnect:x:994:992:NetworkManager user for OpenConnect:/:/sbin/nologin
+gluster:x:993:990:GlusterFS daemons:/run/gluster:/sbin/nologin
+saslauth:x:992:76:Saslauthd user:/run/saslauthd:/sbin/nologin
+rtkit:x:172:172:RealtimeKit:/:/sbin/nologin
+pipewire:x:991:989:PipeWire System Daemon:/run/pipewire:/usr/sbin/nologin
+chrony:x:990:988:chrony system user:/var/lib/chrony:/sbin/nologin
+dnsmasq:x:989:987:Dnsmasq DHCP and DNS server:/var/lib/dnsmasq:/usr/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+openvpn:x:988:986:OpenVPN:/etc/openvpn:/sbin/nologin
+nm-openvpn:x:987:985:Default user for running openvpn spawned by NetworkManager:/:/sbin/nologin
+colord:x:986:984:User for colord:/var/lib/colord:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+wsdd:x:985:982:Web Services Dynamic Discovery host daemon:/:/sbin/nologin
+flatpak:x:984:981:Flatpak system helper:/:/usr/sbin/nologin
+gdm:x:42:42:GNOME Display Manager:/var/lib/gdm:/usr/sbin/nologin
+gnome-initial-setup:x:983:980::/run/gnome-initial-setup/:/sbin/nologin
+vboxadd:x:982:1::/var/run/vboxadd:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/usr/share/empty.sshd:/usr/sbin/nologin
+tcpdump:x:72:72:tcpdump:/:/usr/sbin/nologin
+passim:x:975:975:Local Caching Server:/usr/share/empty:/usr/sbin/nologin
+dwikso:x:1000:1000:Dwikso:/home/dwikso:/usr/bin/zsh
+gnome-remote-desktop:x:974:974:GNOME Remote Desktop:/var/lib/gnome-remote-desktop:/usr/sbin/nologin
+sddm:x:973:973:SDDM Greeter Account:/var/lib/sddm:/usr/sbin/nologin
+root:x:0:
+bin:x:1:
+daemon:x:2:
+sys:x:3:
+adm:x:4:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mem:x:8:
+kmem:x:9:
+wheel:x:10:dwikso
+cdrom:x:11:
+mail:x:12:
+man:x:15:
+dialout:x:18:
+floppy:x:19:
+games:x:20:
+tape:x:33:
+video:x:39:
+ftp:x:50:
+lock:x:54:
+audio:x:63:
+users:x:100:
+nobody:x:65534:
+dbus:x:81:
+apache:x:48:
+utmp:x:22:
+utempter:x:35:
+tss:x:59:
+input:x:104:dwikso
+kvm:x:36:qemu
+render:x:105:
+sgx:x:106:
+systemd-journal:x:190:
+systemd-coredump:x:999:
+systemd-network:x:192:
+systemd-oom:x:998:
+systemd-resolve:x:193:
+systemd-timesync:x:997:
+qemu:x:107:
+polkitd:x:114:
+avahi:x:70:
+usbmuxd:x:113:
+unbound:x:996:
+brlapi:x:995:
+dip:x:40:
+geoclue:x:994:
+printadmin:x:993:
+nm-openconnect:x:992:
+jackuser:x:991:
+gluster:x:990:
+saslauth:x:76:saslauth
+rtkit:x:172:
+pipewire:x:989:
+chrony:x:988:
+dnsmasq:x:987:
+rpc:x:32:
+openvpn:x:986:
+nm-openvpn:x:985:
+colord:x:984:
+rpcuser:x:29:
+libvirt:x:983:
+abrt:x:173:
+wsdd:x:982:
+flatpak:x:981:
+gdm:x:42:
+gnome-initial-setup:x:980:
+power:x:979:
+vboxsf:x:978:
+sshd:x:74:
+tcpdump:x:72:
+plocate:x:977:
+gamemode:x:976:
+passim:x:975:
+dwikso:x:1000:
+gnome-remote-desktop:x:974:
+sddm:x:973:
+
+la commande cat /etc/passwd /etc/group concaténe les deux fichiers
+
+4/ le contenu combiné des deux fichiers n'est pas afficher entierment
+
+5/ man ls puis h 
+affiche la liste des commandes simplifiées
+
+
+6/ whatis ls affiche ce que la commande ls fait
+whereis ls affiche où est la commande ls
+which ls affiche le chemin d'accès de la commande ls
+
+7/ file (1)             - Déterminer le type d'un fichier
+FILE (3type)         - input/output stream
+
+
+Exercice 3
+
+1/ drwxr-xr-x@ - dwikso 27 sept. 11:37  essai_droit
+
+
+2/ 
+
+
+
+Notation symbolique : chmod u=rwx,g=r,o=x essai_droit
+
+base 8 : chmod 751 essai_droit
+
+Notation symbolique : chmod u=rx,g=w,o=x essai_droit
+
+base 8 : chmod 521 essai_droit
+
+Notation symbolique : chmod u=w,g=x,o=r essai_droit
+
+base 8 : chmod 214 essai_droit
+
+Notation symbolique : chmod u=x,g=rx,o= essai_droit
+
+base 8 : chmod 150 essai_droit
