@@ -51,7 +51,25 @@ touch home/user1/module1/TP/tp4.txt
 
 3/ mkdir user2/configuration && cp /etc/*.conf user2/configuration
 
+4/ mv user1/module3 user1/examen
 
+5/ mkdir home/user2/absence
+
+6/ mv /home/user1/module2 /home/user2/examen
+
+7/ chmod 705 user2
+
+8/ umask 027
+
+9/ tar -cvf user1 user1.tar 
+
+10/ tar -zcvf user1.tar.gz user1
+
+11/ find home/user1 -name "t*", ls/home/user1/t*
+
+12/ tail -n13 /etc/passwd
+
+13/ passwd user2
 
 
 

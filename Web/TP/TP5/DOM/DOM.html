@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+    
+  </head>
+
+  <body>
+    <script src="dom.js"></script>
+    <header>
+      <h1 id="h1">Document Object Model</h1>
+    </header>
+
+    <section>
+      <p>
+        Le Document Object Model (ou DOM) est un standard du W3C qui décrit une
+        interface indépendante de tout langage de programmation et de toute
+        plate-forme, permettant à des programmes informatiques et à des scripts
+        d'accéder ou de mettre à jour le contenu, la structure ou le style de
+        documents HTML et XML. Le document peut ensuite être traité et les
+        résultats de ces traitements peuvent être réincorporés dans le document
+        tel qu'il sera présenté.
+      </p>
+    </section>
+
+    <nav>
+      <h2>Sommaire</h2>
+      <ul>
+        <li>
+          <a href="#evolution">Évolution du DOM au sein des navigateurs web</a>
+        </li>
+        <li><a href="#aspects">Aspects techniques</a></li>
+        <li><a href="#evenements">Événements</a></li>
+        <li><a href="#notes">Notes et Références</a></li>
+        <li><a href="#liens">Liens externes</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="evolution">
+        <h2>Évolution du DOM au sein des navigateurs web</h2>
+        <p>
+          Avant sa standardisation par le W3C, chaque navigateur web disposait
+          de son propre Document Object Model. Si le langage de base destiné à
+          manipuler les documents web a vite été standardisé autour de
+          JavaScript, il n'en a pas été de même pour la série précise de
+          fonctions à utiliser et la manière de parcourir le document. Par
+          exemple, lorsque Netscape Navigator préconisait de parcourir un
+          tableau indexé nommé <code>document.layers[]</code>, Internet Explorer
+          l'appelait plutôt <code>document.all[]</code>, et ainsi de suite. En
+          pratique, cela obligeait à écrire (au moins) deux versions de chaque
+          morceau de script si l'on voulait rendre son site accessible au plus
+          grand nombre.
+        </p>
+        <p>
+          La standardisation de ces techniques s'est faite en plusieurs étapes,
+          lesquelles étendent chaque fois les possibilités précédentes sans
+          jamais les remettre en cause.
+        </p>
+
+        <section id="dom1">
+          <h3>DOM 1</h3>
+          <p>
+            La première est le DOM Level 1 publié en 1998 (le niveau 0 étant
+            considéré comme l'implémentation de base figurant dans Netscape
+            Navigator 2.0), où le W3C a défini une manière précise de
+            représenter un document (en particulier un document XML) sous la
+            forme d'un arbre. Chaque élément généré à partir du balisage comme,
+            dans le cas de HTML, un paragraphe, un titre ou un bouton de
+            formulaire, y forme un nœud. Est également définie une série de
+            fonctions permettant de se déplacer dans cet arbre, d'y ajouter,
+            modifier ou supprimer des éléments. En plus des fonctions génériques
+            applicables à tout document structuré, des fonctions particulières
+            ont été définies pour les documents HTML, permettant par exemple la
+            gestion des formulaires. Le DOM Level 1 a été disponible dans sa
+            plus grande partie dès les premières versions d'Internet Explorer 5
+            et de Netscape 6.
+          </p>
+        </section>
+
+        <section id="dom2">
+          <h3>DOM 2</h3>
+          <p>
+            La seconde étape est le DOM Level 2 (publié en 2000), à présent
+            constitué de six parties (en plus de Core et HTML, on trouvera
+            Events, Style, View et Traversal and Range). Dans les évolutions de
+            la brique de base (Core), on notera la possibilité d'identifier plus
+            rapidement un nœud ou un groupe de nœuds au sein du document. Ainsi,
+            pour obtenir un élément particulier on ne le recherchera plus dans
+            un tableau comme dans les DOM propriétaires précédents, mais on
+            appellera la fonction
+            <code>getElementById()</code>.
+          </p>
+        </section>
+
+        <section id="dom3">
+          <h3>DOM 3 et 4</h3>
+          <p>
+            Le troisième niveau, publié au printemps 2004, a ajouté le support
+            de XPath, la gestion d'événements clavier, et une interface de
+            sérialisation de documents XML. Le quatrième niveau est en cours de
+            développement, le Last Call Working Draft ayant été diffusé en
+            février 2014.
+          </p>
+        </section>
+      </section>
+
+      <section id="aspects">
+        <h2>Aspects techniques</h2>
+        <p>
+          DOM permet de construire une arborescence de la structure d'un
+          document et de ses éléments. Il est donc préférable de parcourir et de
+          mémoriser l'intégralité du document avant de pouvoir effectuer les
+          traitements voulus. Pour cette raison, les programmes utilisant DOM
+          ont souvent une empreinte mémoire volumineuse en cours de traitement.
+          À l'inverse, à partir d'un arbre DOM donné, il est possible de générer
+          des documents dans le langage de balisage voulu, qui pourront à leur
+          tour être manipulés par l'interface DOM.
+        </p>
+        <p>
+          DOM est utilisé pour pouvoir modifier facilement des documents XML ou
+          accéder au contenu des pages web. Dans les cas ne nécessitant pas de
+          manipuler les documents XML, mais juste de les lire, la méthode SAX
+          peut également être choisie car elle traite les éléments de façon
+          successive sans charger le document en mémoire. Elle s'impose quand la
+          taille du document excède la capacité de la mémoire.
+        </p>
+      </section>
+
+      <section id="evenements">
+        <h2>Événements</h2>
+        <p>Cette section est en cours de développement.</p>
+      </section>
+
+      <section id="notes">
+        <h2>Notes et Références</h2>
+        <ul>
+          <li>
+            Référence à la source Wikipédia :
+            <a href="https://fr.wikipedia.org/wiki/Document_Object_Model"
+              >Document Object Model - Wikipédia</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="liens">
+        <h2>Liens externes</h2>
+        <ul>
+          <li>
+            <a href="http://www.w3.org" target="_blank" rel="noopener">W3C</a>
+          </li>
+          <li>
+            <a
+              href="http://www.w3schools.com/tags/ref_byfunc.asp"
+              target="_blank"
+              rel="noopener"
+              >W3Schools: HTML Tags</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Ce document a été extrait de Wikipédia. Visitez
+        <a
+          href="https://fr.wikipedia.org/wiki/Document_Object_Model"
+          target="_blank"
+          rel="noopener"
+          >DOM sur Wikipédia</a
+        >
+        pour en savoir plus.
+      </p>
+    </footer>
+  </body>
+</html>
+

@@ -1,6 +1,4 @@
 function getBrowserName(userAgent) {
-  // The order matters here, and this may report false positives for unlisted browsers.
-
   if (userAgent.includes("Firefox")) {
     return "Mozilla Firefox";
   } else if (userAgent.includes("SamsungBrowser")) {
@@ -51,7 +49,7 @@ const navigatorAgent = navigator.userAgent;
 
 function infoPopUp() {
   window.alert(
-    `Your are using ${browserName},${OsName} with version ${version}, userAgent: ${navigatorAgent}`,
+    `Your are using ${browserName}, on ${OsName} with version ${version}, userAgent: ${navigatorAgent}`,
   );
 }
 

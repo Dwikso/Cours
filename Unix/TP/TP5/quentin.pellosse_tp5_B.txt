@@ -1,0 +1,55 @@
+Exercice 1/
+
+1/ touch original.txt, ln original.txt physique
+
+2/ on remarque que les 2 fichiers sont identiques, quand on modifie original.txt, physique est modifié aussi.
+
+3/ touch original.txt, ln -s original.txt physique, 
+
+4/ les 2 fichiers sont identiques
+
+5/ ls -i original.txt symbolique physique les inodes ne sont pas les mêmes pour original et symbolique mais se sont les mêmes pour original.txt physique
+
+6/ les données pour physique sont encore présente mais pas symbolique
+
+
+Exercice 2/
+
+1/ find . *.txt
+
+2/ find ~ *.txt
+
+3/ find . -name "f*"
+
+4/ find /etc -name "c*"
+
+5/ find /usr -name "passwd" 
+
+6/ find /usr -type d -name 'bin'
+
+7/ find . -type -f -mmin -30
+
+8/ find . -type -f -size 10k
+
+
+Exercice 3/
+
+1/ grep -i "nies" dico_francais_fr.txt
+
+2/ grep -i "liste$" dico_francais_fr.txt
+
+3/ grep -i -n "iennes$" dico_francais_fr.txt
+
+4/ grep -c "^w" dico_francais_fr.txt pour compter et grep "^w" dico_francais_fr.txt pour afficher
+
+5/ grep -r -c "main" /bin
+
+6/ ls | grep "m" dico_francais_fr.txt
+
+ls | grep ".txt$"
+
+ls | grep "[0-9]"
+
+ls | grep -i "m"
+
+ls tp/* | grep "xts"

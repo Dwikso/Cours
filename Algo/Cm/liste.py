@@ -12,6 +12,23 @@ class Maillon:
             mess += ' '
         return mess
 
+    def delete(self, i):
+        assert ind < self.len()
+        if ind == 0:
+            self.__suiv = self.__suiv.__suiv
+        else:
+            self.__suiv.delete(i - 1)
+
+    def insert(self,val,i):
+        if ind == 0:
+            self.__suiv = Maillon(val,self.__suiv)
+    
+    def copy(self):
+        l = listeChaine()
+        if not self.est_vide():
+            l.__tete = self.__tete.copy()
+        return l
+
 class ListeChaine:
     def __init__(self):
         self.__tete = None
@@ -43,25 +60,18 @@ class ListeChaine:
         return i
     
     def get(self,i):
-        assert self.__tete != None
-        cpt = 0
-        m = self.__tete
-        while cpt < i:
-            assert m.__suivant() != None
-            m = m.__suivant()
-            cpt += 1
-        return m.get()
+        assert ind < self.len()
+        if ind == 0:
+            return self.__val
+        return self.__suivant.get(i-1)
+
 
     def delete(self,i):
         assert i < self.len()
         if i == 0:
             self.__tete = self.__tete.__suivant()
         else:
-            prec = self.__tete
-            for i in range(i - 1):
-                prec = prec.__suivant()
-            prec.set_suiv(prec.__suivant().suivant())
-
+            self.__tete.delete(i -  1)
     def est_vide(self):
         return self.__tete == None
 
@@ -73,9 +83,23 @@ class ListeChaine:
         if i == 0:
             self.__tete = Maillon(val,self.__tete)
         else:
-            prec = self.__tete
-            for i in range(i - 1):
-                prec = prec.__suivant()
-            prec.set_suiv(Maillon(val,prec.__suivant()))
+            self.__tete.inser(val,i-1)
 
 
+    def copy(self):
+        new_list = ListeChaine()
+        if not self.est_vide():
+            new_list.__tete = self.__tete.copy()
+        return new_list
+
+class Pile:
+    def __init__(self):
+        self.l = ListeChaine()
+
+    def est_vide(self):
+        return self.l.est_vide()
+
+    def sommet(self):
+        elt = self.l.get(0)
+        self.l.delete(0)
+        return elt
