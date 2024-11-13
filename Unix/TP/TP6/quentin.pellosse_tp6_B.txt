@@ -1,0 +1,72 @@
+Exercice 2/
+
+1/ vi introVi
+
+2/ :q
+
+3/ ll, on remarque qu'il n'y a pas de ficheier introVi car nous n'avons pas enregistrer le fichier
+
+4/ vi introVi, :w pour enrigistrer le fichier
+
+5/ :q
+
+Exercice 3/
+
+1/ vi introVi
+
+2/ a pour entrer en mode insertion, puis j'écris la phrase man ls
+
+3/ :q!
+
+4/ cat introVi, on remarque que le fichier et vide car nous avons juste quitter sans enregistrer le fichier
+
+5/ :wq pour quitter et enregistrer le fichier
+
+6/ permission non accordée
+
+7/ chmod +x introVi, on constate que le fichier et maintenant executable et que la commande man ls s'execute quand ont fait ./introVi
+
+Exercice 4/
+
+1/ vi text1.txt
+
+2/ a pour entrer en mode insertion, puis j'écris la phrase Aujourd'hui
+
+3/ cw bascule en mode insertion j'ai donc fait r c pour remplacer la lettre par un c
+
+4/ G, puis $ pour aller à la fin du texte
+
+5/ utilisation de h,j,k,l pour naviguer dans le texte puis a pour entrer en mode insertion pour corriger les fautes
+
+6/ dw
+
+7/ G puis dd
+
+8/ u
+
+9/ dw
+
+10/ :%s/intimidant/difficile/g
+
+11/ :wq
+
+
+Exercice 5
+
+1/ vi text2.txt
+
+2/ gg pour revenir au début de la premier ligne
+
+3/ a pour entrer en mode insertion, puis j'écris la "Les programmeurs sont des
+créateurs de"
+
+4/ SHIFT + :
+
+5/ :%s/programmeur/développeur/g
+
+6/ :%s/développeur.*/&##/
+
+7/ :g/^$/d
+
+8/ :g/code/d
+

@@ -1,0 +1,76 @@
+Exercice 1/
+
+1 /
+2 / Cette commande représente une boucle infini qui éxécute echo –n A >> /tmp/log; sleep 1; done. 
+
+La commande echo -n A affiche la lettre A sans sauter de ligne (le flag -n supprime le retour à la ligne par défaut) >> /tmp/log redirige la sortie vers le fichier /tmp/log, en mode ajout(append). Cela signifi que chaque A sera ajouté à la fin du fichier sans écraser le contenue existant
+
+3/ tail -f /tmp/log
+
+4/ J'ai interrompu le processus
+
+5/ le numéro de la tache est [1]  + 12298 suspended  sleep 1
+
+6/ L'ajout des A est arreter
+
+7/ bg %1
+
+8/ l'ajout des A a repris
+
+9 / Cela ajoute B et C a la suite de A
+
+10 / ps
+
+11 / kill %1, jobs
+
+12 / kill -SIGCOUNT %1
+
+13/ kill -SIGTERM %2, kill -SIGTERM %3
+
+14/ jobs, kill -SIGTERM %1 pour terminer le processus 1 qui est encore en cours
+
+15/ clear et exit
+
+Exercice 2
+
+1/ while true; do date; sleep 5; done &
+
+2/ le processus du PID est 27788
+
+3/ sudo renice 10 -p 27788
+
+4/ while true; do date; sleep 5; done &
+
+5/ pgrep -l "date"
+
+6/ kill + le pid 
+
+7/ exit
+
+8/ firefox pour le lancer et pkill firefox pour le kill
+
+9/ 
+
+Exercice 3/
+
+1/ echo "Entrez votre nom :"
+read nom
+
+2/ echo "Bonjour, $nom"
+
+3/ echo "Votre répertoire personnel est : $HOME"
+
+4/ export TEST="Bonjour le monde"
+
+5/ printenv | grep TEST
+
+6/ unset TEST, printenv | grep TEST
+
+7/ date_du_jour=$(date)
+echo "La date du jour est : $date_du_jour"
+
+8/ la Variable locale est disponible dans le shell ou elle est définie
+
+La variable d'environnement : est accesible à tous les sous-processus lancés depuis le shell
+
+

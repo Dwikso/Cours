@@ -1,0 +1,26 @@
+mon cours Vi
+
+J'ai décidé de me lancer dans Aujourd'hui l'apprentissage de l'éditeur Vi. Cet éditeur, bien que réputé pour sa courbe d'apprentissage abrupte, offre une flexibilité et une rapidité inégalées.
+
+Pourquoi choisir Vi ?
+
+1. Efficacité : Une fois maîtrisé, Vi permet d'éditer du texte très rapidement.
+2. Disponibilité : Présent sur presque tous les systèmes Unix/Linux.
+3. Personnalisation : Possibilité d'ajouter des plugins et de configurer l'éditeur selon ses 
+   besoins.
+
+Mes Premiers Pas
+
+Pour commencer, voici quelques commandes de base à retenir :
+
+- `i` : Passer en mode insertion pour ajouter du texte.
+- `Esc` : Revenir en mode normal.
+- `:w` : Enregistrer le fichier.
+- `:q` : Quitter l'éditeur.
+- `:wq` : Enregistrer et quitter en même temps.
+
+Avec ces bases, je suis prêt à explorer davantage les fonctionnalités offertes par Vi et à améliorer mes compétences en édition de texte. 
+
+
+
+L'apprentissage de Vi peut sembler difficile au début, mais avec de la pratique, je suis convaincu que je deviendrai un utilisateur compétent. Chaque session d'édition est une occasion d'apprendre 

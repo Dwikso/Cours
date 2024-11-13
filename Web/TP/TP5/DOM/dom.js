@@ -26,14 +26,14 @@ function majh1(n) {
 
 function capitalizeTextInHeaders(node) {
   if (node.nodeType === Node.ELEMENT_NODE) {
-      if (node.tagName === 'H1' || node.tagName === 'H2') {
-          node.childNodes.forEach(child => {
-              if (child.nodeType === Node.TEXT_NODE) {
-                  child.textContent = child.textContent.toUpperCase();
-              }
-          });
-      }
-      node.childNodes.forEach(capitalizeTextInHeaders);
+    if (node.tagName === "H1" || node.tagName === "H2") {
+      node.childNodes.forEach((child) => {
+        if (child.nodeType === Node.TEXT_NODE) {
+          child.textContent = child.textContent.toUpperCase();
+        }
+      });
+    }
+    node.childNodes.forEach(capitalizeTextInHeaders);
   }
 }
 
@@ -48,10 +48,34 @@ function isTitle(node) {
 
 function anyRec(f, node) {
   if (f(node)) return true;
-  
+
+  let child = node.firstChild;
+  while (child) {
+    if (anyRec(f, child)) {
+      return true;
+    }
+    child = child.nextSibling;
+  }
+
+  return false;
 }
 
-document.addEventListener("DOMContentLoaded",  () =>{
+function firstOfRec(f, node) {
+  if (f(node)) return node;
+
+  let child = node.firstChild;
+  while (child) {
+    let res = firstOfRec(f, child);
+    if (res) {
+      return res;
+    }
+    child = child.nextSibling;
+  }
+
+  return null;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
   const title = document.title;
   alert(`Titre de la page : ${title}`);
   document.getElementById("h1").textContent = "Document Object Model (DOM)";
