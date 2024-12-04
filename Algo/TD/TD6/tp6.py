@@ -14,6 +14,27 @@ class ArbreBinaire:
         if self.__racine is None:
             return None
         return self.__racine.maximum()
+    
+    def permute(self):
+        self.__fg, self.__fd = self.__fd, self.__fg
+        if self.aFG():
+            self.__fg.permute()
+        if self.aFD():
+            self.__fd.permute()
+    
+    def miroir(self,a):
+        if self.get() != a.get():
+            return False
+        if (self.aFG() and not a.aFD()) or (self.aFD() and not a.aFG()):
+            return False
+        if (not self.aFG() and a.aFD()) or (not self.aFD() and a.aFG()):
+            return False
+        b1,b2 = True, True
+        if self.aFG():
+            b1 = self.__fg.miroir(a.__fg)
+        if self.aFD():
+            b2 = self.__fd.miroir(a.__fd)
+        return b1 and b2
 
 
 class Sommet:
@@ -101,7 +122,8 @@ class Sommet:
                 valeurs.append(valeur)
         return valeurs
     
-    def hauteur(self):
-        if self.estFeuille():
-            return 0
-        hauteur_gauc
+     def miroir(self,a):
+        if self(.est_vide() and not arb.est_vide()) or (not self.est_vide() and arb.est_vide()):
+            return False
+        if self.est_vide() :
+            return self.__racine.miroir(a.__racine)

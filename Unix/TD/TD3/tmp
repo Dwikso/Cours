@@ -1,0 +1,44 @@
+lrwxrwxrwx@     - root  1 oct.  01:00 2to3 -> 2to3-3.12
+.rwxr-xr-x@    96 root  1 oct.  01:00 2to3-3.12
+.rwxr-xr-x@    48 root  4 oct.  01:00 7z
+.rwxr-xr-x@   58k root 27 sept. 01:00 [
+lrwxrwxrwx@     - root  6 mai   01:00 a2ping -> /usr/share/texlive/texmf-dist/scripts/a2ping/a2ping.pl
+lrwxrwxrwx@     - root  6 mai   01:00 a5toa4 -> /usr/share/texlive/texmf-dist/scripts/pfarrei/a5toa4.tlu
+.rwxr-xr-x@   61k root  1 août  01:00 ab
+.rwxr-xr-x@  1,4k root  1 sept. 01:00 abrt
+.rwxr-xr-x@   20k root  1 sept. 01:00 abrt-action-analyze-backtrace
+.rwxr-xr-x@   20k root  1 sept. 01:00 abrt-action-analyze-c
+.rwxr-xr-x@    76 root  1 sept. 01:00 abrt-action-analyze-ccpp-local
+.rwxr-xr-x@   24k root 22 janv. 01:00 abrt-action-analyze-java
+.rwxr-xr-x@   16k root  1 sept. 01:00 abrt-action-analyze-oops
+.rwxr-xr-x@   16k root  1 sept. 01:00 abrt-action-analyze-python
+.rwxr-xr-x@  2,6k root  1 sept. 01:00 abrt-action-analyze-vmcore
+.rwxr-xr-x@  1,4k root  1 sept. 01:00 abrt-action-analyze-vulnerability
+.rwxr-xr-x@   20k root  1 sept. 01:00 abrt-action-analyze-xorg
+.rwxr-xr-x@  1,9k root  1 sept. 01:00 abrt-action-check-oops-for-alt-component
+.rwxr-xr-x@  6,6k root  1 sept. 01:00 abrt-action-check-oops-for-hw-error
+.rwxr-xr-x@  5,7k root  1 sept. 01:00 abrt-action-find-bodhi-update
+.rwxr-xr-x@   16k root  1 sept. 01:00 abrt-action-generate-backtrace
+.rwxr-xr-x@   16k root  1 sept. 01:00 abrt-action-generate-core-backtrace
+.rwxr-xr-x@  3,7k root  1 sept. 01:00 abrt-action-list-dsos
+.rwxr-xr-x@  7,2k root  1 sept. 01:00 abrt-action-notify
+.rwxr-xr-x@   33k root  1 sept. 01:00 abrt-action-save-package-data
+.rwxr-xr-x@   24k root  1 sept. 01:00 abrt-action-trim-files
+.rwxr-xr-x@   54k root  1 sept. 01:00 abrt-applet
+.rwxr-xr-x@   24k root  1 sept. 01:00 abrt-bodhi
+lrwxrwxrwx@     - root  1 sept. 01:00 abrt-cli -> /usr/bin/abrt
+.rwxr-xr-x@   33k root  1 sept. 01:00 abrt-dump-journal-core
+.rwxr-xr-x@   41k root  1 sept. 01:00 abrt-dump-journal-oops
+.rwxr-xr-x@   37k root  1 sept. 01:00 abrt-dump-journal-xorg
+.rwxr-xr-x@   24k root  1 sept. 01:00 abrt-dump-oops
+.rwxr-xr-x@   24k root  1 sept. 01:00 abrt-dump-xorg
+.rwxr-xr-x@  8,9k root  1 sept. 01:00 abrt-handle-upload
+.rwxr-xr-x@   16k root  1 sept. 01:00 abrt-merge-pstoreoops
+.rwxr-xr-x@   24k root  1 sept. 01:00 abrt-watch-log
+.rwxr-xr-x@   29k root 26 janv. 01:00 ac
+.rwxr-xr-x@   36k root 22 janv. 01:00 aclocal
+.rwxr-xr-x@   36k root 22 janv. 01:00 aclocal-1.16
+.rwxr-xr-x@   24k root 11 juin  01:00 aconnect
+.rwxr-xr-x@   258 root  7 oct.  01:00 activate-global-python-argcomplete
+.rwxr-xr-x@   16k root 11 févr. 01:00 acyclic
+.rwxr-xr-x@   33k root  3 mai   01:00 addr2line

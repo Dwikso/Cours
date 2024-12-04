@@ -1,0 +1,33 @@
+Exercice 1 /
+
+4  / ln test/rep1/rep4/fic6 test/lpfic6
+5  / le contenue de fic6 sera modifier car lpfic6 est un lien physique
+6  / les droits reste les mêmes
+7  / ln -s test/rep1/rep4/fic6 test/lsfic6
+8  / ls -l test/rep1/rep4/fic6 test/lpfic6 test/lsfic6
+9  / Non
+10 / chmod 000 test/rep1
+11 / cat test/lpfic6 test/lsfic6, On obtient le contenue de lpfic6 = contenue de fic6 auquel on n'a plus droit, le fichier lsfic6 n'a pas de contenue car lien symbolique pointeur vers le chemin d'accès
+12 / chmod 755 test/rep1 mv test/rep1/rep4/fic6 test/rep1
+13 / lpfic6 persiste et son contenue également, lsfic6 lien cassé, il ne pointe plus vers une cible valide
+
+Exercice 2 /
+
+1 / Jobs
+2 / ps -o pid
+3 / La commande top en arrière-plan ne s'affiche pas directement, si elle est lancé en arrière-plan
+4 / fg
+5 / find ~ -name "*.conf" | less &
+6 / la tâche sera relancée en arrière-plan
+7 / fg
+8 / kill
+
+Exercice 3 / 
+
+1/
+
+2 / export ME=$USER
+3 / ME="$ME:$HOME"
+4 / echo $ME
+5 / today=$(date +%Y-%m-%d) echo $today
+
